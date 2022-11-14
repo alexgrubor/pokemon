@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon fight</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="leftFighter">
+        <div id="player1">
+          <img
+            src="img\9-98231_pikachu-3d-png-pokepark-wii-pikachus-adventure-transparent-removebg-preview.png"
+            alt="pikachu"
+            class="attackRight"
+          />
+        </div>
+        <div class="healthStatus">
+          <h2>Health Status</h2>
+          <progress id="player1-health" max="100" value="100">100</progress>
+        </div>
+
+        <button id="attack1">Attack</button>
+        <div class="magicStatus">
+          <h2>Magic Status</h2>
+          <progress id="player1-magic" max="100" value="100">100</progress>
+        </div>
+        <div class="add">
+            <button id="health1">Recover Health</button>
+            <button id="magic1">Add Magic</button>
+        </div>
+        <div class="attackThink" id="light1">
+            <img src="img\50-505361_dark-lightning-png-black-and-white-lightning-transparent-removebg-preview.png" alt="">
+        </div>
+        <div class="indjured" id="star2">
+          <img src="img\images-removebg-preview.png" alt="">
+        </div>
+      </div>
+      <div class="rightFighter">
+        <img
+          src="img\99-992086_venusaur-png-free-stock-pokemon-bulbasaur-removebg-preview.png"
+          alt=""
+        />
+        <div class="healthStatus">
+          <h2>Health Status</h2>
+          <progress id="player2-health" max="100" value="100">100</progress>
+        </div>
+        <button id="attack2">Attack</button>
+        <div class="magicStatus">
+          <h2>Magic Status</h2>
+          <progress id="player2-magic" max="100" value="100">100</progress>
+        </div>
+        <div class="add">
+            <button id="health2">Recover Health</button>
+            <button id="magic2">Add Magic</button>
+        </div>
+        <div class="attackThink" id="light2">
+            <img src="img\leavees.png" alt="">
+        </div>
+        <div class="indjured" id="star1">
+          <img src="img\images-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

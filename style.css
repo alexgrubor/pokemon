@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img {
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+progress {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 400px;
+  height: 2rem;
+  color: #ff0062;
+  border: 2px solid hsl(337, 100%, 90%);
+}
+progress[value]::-webkit-progress-bar,
+progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #ff0062;
+  transition: all 0.2s ease-out;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #ff0062;
+  transition: all 0.2s ease-out;
+}
+.leftFighter,
+.rightFighter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+   
+}
+button {
+    background-color:hsl(337, 100%, 90%);
+    color: #ff0062;
+    border: 2px solid #ff0062;
+    padding: 0.5rem;
+    width: 150px;
+}
+.attackThink {
+  position: absolute;
+  display: none;
+}
+
+.indjured {
+  position: absolute;
+  display: none;
+}
+.active{
+  display: block;
+}
