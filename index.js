@@ -31,14 +31,15 @@ class Pokemon {
         {
            return`${this.name} can't attack, he is already dead! 
            ${pokemon.name} has won this round`;
+        } else if (this.magic < this.skills[0].magic) {
+          return `You don't have enough magic`
         }
-  };
   getMagic = function () {
     let randomMagicAddition = Math.floor(Math.random() * 20);
     this.magic = this.magic + randomMagicAddition;
     return `${this.name} was add ${randomMagicAddition} amount of magic back`;
   };
-}
+}}
 class AttackSkill {
   constructor(nameOfAttack, damage, magic) {
     this.nameOfAttack = nameOfAttack;
