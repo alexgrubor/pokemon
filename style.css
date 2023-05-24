@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+  background-color: #eee;
+}
+.attack {
+  background-color: gray;
+}
 main {
     display: flex;
     height: 100vh;
